@@ -103,3 +103,20 @@ ORDER BY Profit DESC
 ------10. RETURNED ITEMS-------
 SELECT NULL FROM [KMS Sql Case Study]
 ORDER BY Customer_Segment
+
+### CONCLUSION DRAWN FROM THE ABOVE ANALYSIS
+- The product category with the highest sale is TECHNOLOGY with 5,984,248 sales.
+- The top 3 region in term of sales
+  _ WEST
+  _ ONTARIO
+  _ PRARIE
+  
+- The bottom 3 region in term of sales
+_ NUNAVAT
+_ NORTHWEST TERRITORIES
+_ YUKON
+
+- Total sales of appliances in ONTARIO
+
+- To increase the revenue from the bottom 10 costumers, it is advisable to 
+- 
