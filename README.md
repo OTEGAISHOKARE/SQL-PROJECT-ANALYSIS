@@ -34,76 +34,103 @@ Some questions analysed with the Data Includes;
   
 ### DATA ANALYSIS
 ------1. PRODUCT WITH HIGHEST SALES------
+``` SQL
 select TOP 1 Product_Category, sum([sales]) as [total sales]
 from [KMS Sql Case Study]
 group by Product_Category
 order by [total sales] desc
 
+```
 
 select * from [KMS Sql Case Study]
 
 -------2a. TOP 3 REGION BY SALES-----
+``` SQL
 select top 3 Region, sum([sales]) as [Total sales]
 from [KMS Sql Case Study]
 group by Region
 order by [Total sales] desc
 
+``` 
 ----- 2b. BOTTOM 3 REGION BY SALES---------
+``` SQL
 select top 3 Region, sum([sales]) as [Total sales]
 from [KMS Sql Case Study]
 group by Region
 order by [Total sales] asc
 
+```
+
 ------3. TOTAL SALES IN ONTARIO-------
+``` SQL
 select Product_Category, sum(sales) as [total sales]
 from [KMS Sql Case Study]
 where Region = 'Ontario'
 group by Product_Category
 
+```
+``` SQL
 ALTER TABLE [KMS Sql Case Study]
 ALTER COLUMN Product_Base_Margin
 DECIMAL (10,2);
 
+``` 
+
 --------4. BOTTOM 10 CUSTOMERS----
+``` SQL
 select top 10 Customer_Name,Shipping_Cost,Discount,Unit_Price,sum(Order_Quantity) as [total Order_Quantity]
 from [KMS Sql Case Study]
 group by Customer_Name,Shipping_Cost,Discount,Unit_Price
 order by [total Order_Quantity] asc
 
+``` 
 ---------5. MOST SHIPPING COST-----
+``` SQL
 Select TOP 1 Ship_Mode,sum([shipping_cost]) as [total shipping_cost]
 from [KMS Sql Case Study]
 group by Ship_Mode
 order by [total shipping_cost] desc
 
+```
+
 ------- 6. MOST VALUABLE CUSTOMER-------
+``` SQL
 select Customer_Segment,Product_Sub_Category,Customer_Name,sum([sales]) as [total sales]
 from [KMS Sql Case Study]
 group by Customer_Segment,Product_Sub_Category,Customer_Name
 order by [total sales] desc
 
+``` 
 ------- 7. SMALL BUSINESS HIGHEST SALES------
+``` SQL
 Select top 1 *
 from [KMS Sql Case Study]
 where Customer_Segment = 'SMALL BUSINESS'
 ORDER BY Sales desc
 
+``` 
 ------8. CORPORATE CUSTOMER HIGHEST ORDER------
+``` SQL
 SELECT TOP 1 *
 FROM [KMS Sql Case Study]
 WHERE Customer_Segment = 'CORPORATE'
 ORDER BY Order_Quantity DESC
 
+``` 
 -------9. PROFITABLE CONSUMER CUSTOMER-------
+``` SQL
 SELECT TOP 1 *
 FROM [KMS Sql Case Study]
 WHERE Customer_Segment = 'CONSUMER'
 ORDER BY Profit DESC
 
+``` 
 ------10. RETURNED ITEMS-------
+``` SQL
 SELECT NULL FROM [KMS Sql Case Study]
 ORDER BY Customer_Segment
 
+``` 
 ### CONCLUSION DRAWN FROM THE ABOVE ANALYSIS
 - The product category with the highest sale is TECHNOLOGY with 5,984,248 sales.
 - The top 3 region in term of sales
