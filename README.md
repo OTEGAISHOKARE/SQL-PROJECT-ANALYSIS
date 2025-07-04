@@ -83,7 +83,8 @@ from [KMS Sql Case Study]
 group by Customer_Name,Shipping_Cost,Discount,Unit_Price
 order by [total Order_Quantity] asc
 
-``` 
+```
+
 ---------5. MOST SHIPPING COST-----
 ``` SQL
 Select TOP 1 Ship_Mode,sum([shipping_cost]) as [total shipping_cost]
@@ -144,6 +145,21 @@ _ NORTHWEST TERRITORIES
 _ YUKON
 
 - Total sales of appliances in ONTARIO
+- Office Supplies: 927,431.25
+- Furniture: 1,109,617.50
+- Technology: 1,026,163.85
 
-- To increase the revenue from the bottom 10 costumers, it is advisable to 
-- 
+- To increase the revenue from the bottom 10 costumers, showcase to them other available office supplies that they haven't gotten before and let them see reason as to why it is advisable for them to get it, enticing them with a discount on purchase of goods from 3 above. Give them reasons to buy in bulk.
+
+- Most valuable customer is the CONSUMER customer
+
+- Highest sales from Small Business owner is 33,367.85 with order quantity of 9
+
+- Corporate customer highest order is a total of 50 quantity, product purchased: Tables
+
+- Profitable Consumer Customer with profit of 27,220.69
+
+- No record of items returned.
+
+### Conclusion 
+
