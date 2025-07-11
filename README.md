@@ -162,7 +162,7 @@ _ YUKON
 - No record of items returned.
 
 ### Recommendations 
-With delivery truck being the most exonomical but slowest shipping method, it is advisable to use the Express Air for Only Critical and High order priority. As for regular Air, the Medium priority order should be sent using this ship mode and then lastly the Delivery truck can be used to deliver goods that are of low priority and the ones not specified.
+With delivery truck being the most economical but slowest shipping method, it is advisable to use the Express Air for Only Critical and High order priority. As for regular Air, the Medium priority order should be sent using this ship mode and then lastly the Delivery truck can be used to deliver goods that are of low priority and the ones not specified.
 This way, both the company and customer can be satisfied with the delivery cost and timing.
 
 ### Reference 
